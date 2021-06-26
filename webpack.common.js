@@ -18,14 +18,6 @@ module.exports = {
         },
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
-      },
-      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader, 'css-loader',
@@ -34,6 +26,22 @@ module.exports = {
       {
         test: /\.svg$/,
         type: 'asset/resource',
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+        ],
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
       },
     ],
   },
