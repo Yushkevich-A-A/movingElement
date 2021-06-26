@@ -1,0 +1,9 @@
+{
+  "name": "movingElement",
+  "version": "1.0.0",
+  "description": "Moving Element",
+  "main": "index.js",
+  "repository": "https://github.com/Yushkevich-A-A/movingElement.git",
+  "author": "Yushkevich-A-A <Mortifer1993@yandex.ru>",
+  "license": "MIT"
+}
