@@ -4,4 +4,4 @@ import './js/gameField/gameField.css';
 import './js/Goblin/goblin.css';
 
 // js
-import './js/app.js';
+import './js/app';
