@@ -13,7 +13,8 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
-    "preshow:dist": "npm run build"
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
   },
   "repository": "https://github.com/Yushkevich-A-A/movingElement.git",
   "author": "Yushkevich-A-A <Mortifer1993@yandex.ru>",
@@ -30,6 +31,7 @@
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.1",
     "jest": "^27.0.5",
+    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^1.3.3",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "terser-webpack-plugin": "^5.0.3",
