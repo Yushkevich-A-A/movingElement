@@ -3,3 +3,5 @@ import Goblin from './Goblin/Goblin';
 
 new DrawGameField();
 new Goblin();
+
+console.log("Привет мир");
