@@ -7,15 +7,13 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
-    "test": "jest",
     "coverage": "jest --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:doc": "npm run doc",
     "show:doc": "live-server doc",
-    "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "preshow:dist": "npm run build"
   },
   "repository": "https://github.com/Yushkevich-A-A/movingElement.git",
   "author": "Yushkevich-A-A <Mortifer1993@yandex.ru>",
@@ -41,5 +39,7 @@
     "webpack-dev-server": "^3.11.1",
     "webpack-merge": "^5.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "^3.15.1"
+  }
 }
