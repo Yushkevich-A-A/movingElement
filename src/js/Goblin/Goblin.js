@@ -4,9 +4,9 @@ export default class Goblin {
     this.arrayCells = Array.from(document.querySelectorAll('.cell'));
     this.currentCell = null;
     this.activeSetTimeout = null;
-    this.goblin == null;
+    this.goblin = null;
 
-    this.drawGoblin()
+    this.drawGoblin();
     this.goblinActive();
   }
 
@@ -38,5 +38,4 @@ export default class Goblin {
   stopActive() {
     clearTimeout(this.activeSetTimeout);
   }
-
 }

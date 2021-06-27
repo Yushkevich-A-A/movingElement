@@ -1,5 +1,3 @@
-
-
 export default class DrawGameField {
   constructor() {
     this.fieldSize = 4;
