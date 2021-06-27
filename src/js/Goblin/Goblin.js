@@ -4,7 +4,15 @@ export default class Goblin {
     this.arrayCells = Array.from(document.querySelectorAll('.cell'));
     this.currentCell = null;
     this.activeSetTimeout = null;
+    this.goblin == null;
+
+    this.drawGoblin()
     this.goblinActive();
+  }
+
+  drawGoblin() {
+    this.goblin = document.createElement('div');
+    this.goblin.classList.add('goblin');
   }
 
   goblinActive() {
@@ -20,8 +28,8 @@ export default class Goblin {
     } while (this.currentCell === value);
 
     this.currentCell = value;
-    this.clearCells();
-    this.gameField.children[value].classList.add('active');
+
+    this.gameField.children[value].appendChild(this.goblin);
     this.activeSetTimeout = setTimeout(() => {
       this.movementGoblin();
     }, 2000);
@@ -31,11 +39,4 @@ export default class Goblin {
     clearTimeout(this.activeSetTimeout);
   }
 
-  clearCells() {
-    for (const item of this.arrayCells) {
-      if (item.classList.contains('active')) {
-        item.classList.remove('active');
-      }
-    }
-  }
 }
